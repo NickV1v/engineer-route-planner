@@ -18,7 +18,6 @@
 !/tests/fixtures/
 !/.gitignore
 !/Makefile
-!/README.txt
 !/config/routing.json
 !/config/scenario.json
 !/data/samples/address-review/Выдуманные_адреса.csv
@@ -197,3 +196,10 @@
 *.pfx
 id_rsa*
 id_ed25519*
+
+# Public project documentation and reviewed screenshots.
+!/README.md
+!/assets/
+!/assets/screenshots/
+!/assets/screenshots/day-plan.png
+!/assets/screenshots/metro-trip.png
