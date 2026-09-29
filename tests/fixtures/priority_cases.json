@@ -1,0 +1,118 @@
+{
+  "schema_version": "priority_cases_v1",
+  "cases": [
+    {
+      "id": "emergency_over_two_repairs",
+      "description": "Авария важнее двух ремонтов при дефиците времени",
+      "requests": [
+        {"id": "repair_1", "work_type": "repair", "service_s": 1800},
+        {"id": "repair_2", "work_type": "repair", "service_s": 1800},
+        {"id": "emergency", "work_type": "emergency", "service_s": 4800}
+      ],
+      "engineers": [{"id": "E1", "skills": ["local", "emergency"]}],
+      "expected_routes": {"E1": ["emergency"]},
+      "expected_missing": [0, 0, 2],
+      "explanation": "Смена 09:00–11:00. Авария с дорогой занимает 90 минут, каждый ремонт — 40. Два ремонта помещаются, но авария и ремонт требуют 130 минут. Выбирается авария."
+    },
+    {
+      "id": "installation_over_two_repairs",
+      "description": "Подключение важнее двух ремонтов",
+      "requests": [
+        {"id": "repair_1", "work_type": "repair", "service_s": 1800},
+        {"id": "repair_2", "work_type": "repair", "service_s": 1800},
+        {"id": "installation", "work_type": "installation", "service_s": 4200}
+      ],
+      "engineers": [{"id": "E1", "skills": ["local", "installation"], "shift_end_s": 38400}],
+      "expected_routes": {"E1": ["installation"]},
+      "expected_missing": [0, 0, 2],
+      "explanation": "Смена 100 минут. Подключение с дорогой занимает 80 минут, ремонт — 40. Подключение с ремонтом не помещается; выбирается подключение."
+    },
+    {
+      "id": "emergency_over_installation",
+      "description": "Авария выше подключения даже при меньшем остатке времени",
+      "requests": [
+        {"id": "installation", "work_type": "installation", "service_s": 4200},
+        {"id": "emergency", "work_type": "emergency", "service_s": 4800}
+      ],
+      "engineers": [{"id": "E1", "skills": ["installation", "emergency"], "shift_end_s": 37800}],
+      "expected_routes": {"E1": ["emergency"]},
+      "expected_missing": [0, 1, 0],
+      "explanation": "За 90 минут можно выполнить любую одну работу. Авария заканчивается ровно в конце смены; её приоритет выше подключения."
+    },
+    {
+      "id": "additional_is_not_installation",
+      "description": "Один навык не означает одинаковый приоритет",
+      "requests": [
+        {"id": "additional", "work_type": "additional", "service_s": 1200},
+        {"id": "installation", "work_type": "installation", "service_s": 4200}
+      ],
+      "engineers": [{"id": "E1", "skills": ["installation"], "shift_end_s": 37800}],
+      "expected_routes": {"E1": ["installation"]},
+      "expected_missing": [0, 0, 1],
+      "explanation": "Обе работы требуют installation, но подключение приоритетнее дозаказа. Вместе с двумя переездами они занимают 110 минут при смене 90 минут."
+    },
+    {
+      "id": "skill_remains_hard_constraint",
+      "description": "Приоритет не даёт инженеру отсутствующую квалификацию",
+      "requests": [
+        {"id": "emergency", "work_type": "emergency", "service_s": 4800},
+        {"id": "repair", "work_type": "repair", "service_s": 1800}
+      ],
+      "engineers": [{"id": "E1", "skills": ["local"]}],
+      "expected_routes": {"E1": ["repair"]},
+      "expected_missing": [1, 0, 0],
+      "explanation": "Аварийного навыка нет. Авария остаётся без назначения, допустимый ремонт выполняется."
+    },
+    {
+      "id": "release_time_remains_hard_constraint",
+      "description": "Нельзя выехать на аварию до её поступления",
+      "requests": [
+        {"id": "emergency", "work_type": "emergency", "service_s": 4800, "released_at_s": 36000},
+        {"id": "repair", "work_type": "repair", "service_s": 1800}
+      ],
+      "engineers": [{"id": "E1", "skills": ["local", "emergency"]}],
+      "expected_routes": {"E1": ["repair"]},
+      "expected_missing": [1, 0, 0],
+      "explanation": "Авария появляется в 10:00. С дорогой её можно закончить только в 11:30, после конца смены в 11:00. Ремонт выполним."
+    },
+    {
+      "id": "window_and_shift_boundary",
+      "description": "Начало на границе окна и окончание на границе смены допустимы",
+      "requests": [
+        {"id": "installation", "work_type": "installation", "service_s": 4200, "window_start_s": 33000, "window_end_s": 33000}
+      ],
+      "engineers": [{"id": "E1", "skills": ["installation"], "shift_end_s": 37200}],
+      "expected_routes": {"E1": ["installation"]},
+      "expected_missing": [0, 0, 0],
+      "explanation": "Выезд в 09:00, прибытие и начало в 09:10, окончание в 10:20. Обе границы включительны."
+    },
+    {
+      "id": "published_roster_stays_fixed",
+      "description": "Авария не вызывает на смену дополнительного инженера",
+      "requests": [
+        {"id": "emergency", "work_type": "emergency", "service_s": 4800},
+        {"id": "repair", "work_type": "repair", "service_s": 1800}
+      ],
+      "engineers": [
+        {"id": "E1", "skills": ["local"]},
+        {"id": "E2", "skills": ["emergency"]}
+      ],
+      "roster": ["E1"],
+      "expected_routes": {"E1": ["repair"], "E2": []},
+      "expected_missing": [1, 0, 0],
+      "explanation": "Аварийный специалист E2 существует в штате, но не включён в смену. Выполняется ремонт у E1; E2 автоматически не привлекается."
+    },
+    {
+      "id": "shared_location_keeps_two_jobs",
+      "description": "Заявки по одному адресу остаются отдельными работами",
+      "requests": [
+        {"id": "repair", "work_type": "repair", "service_s": 1800, "location_id": "shared"},
+        {"id": "additional", "work_type": "additional", "service_s": 1200, "location_id": "shared"}
+      ],
+      "engineers": [{"id": "E1", "skills": ["local", "installation"], "shift_end_s": 36000}],
+      "expected_routes": {"E1": ["repair", "additional"]},
+      "expected_missing": [0, 0, 0],
+      "explanation": "Дорога 10 минут, работы 30 и 20 минут; между ними дорога нулевая. Обе помещаются ровно в часовую смену и учитываются отдельно. Порядок этих двух работ равноценен."
+    }
+  ]
+}

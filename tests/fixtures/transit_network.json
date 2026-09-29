@@ -1,0 +1,39 @@
+{
+  "schema_version": "static_intervals_v1",
+  "source": "hand_calculated_fixture_v1",
+  "assumptions": ["Вымышленная сеть для проверки арифметики; геометрия и времена синтетические."],
+  "nodes": {
+    "office": {"lat": 55.700, "lon": 37.600},
+    "entrance": {"lat": 55.701, "lon": 37.600},
+    "metro-a": {"lat": 55.702, "lon": 37.600},
+    "metro-middle": {"lat": 55.702, "lon": 37.640},
+    "metro-b": {"lat": 55.702, "lon": 37.680},
+    "bus-b": {"lat": 55.704, "lon": 37.680},
+    "bus-c": {"lat": 55.730, "lon": 37.700},
+    "A": {"lat": 55.731, "lon": 37.700}
+  },
+  "walking": [
+    {"mode":"walk","from_id":"office","to_id":"entrance","duration_s":120,"distance_m":150,"geometry":[{"lat":55.700,"lon":37.600},{"lat":55.701,"lon":37.600}],"quality":"estimated"},
+    {"mode":"walk","from_id":"entrance","to_id":"metro-a","duration_s":180,"distance_m":100,"geometry":[{"lat":55.701,"lon":37.600},{"lat":55.702,"lon":37.600}],"quality":"estimated"},
+    {"mode":"walk","from_id":"metro-b","to_id":"bus-b","duration_s":240,"distance_m":250,"geometry":[{"lat":55.702,"lon":37.680},{"lat":55.704,"lon":37.680}],"quality":"estimated"},
+    {"mode":"walk","from_id":"bus-c","to_id":"A","duration_s":120,"distance_m":150,"geometry":[{"lat":55.730,"lon":37.700},{"lat":55.731,"lon":37.700}],"quality":"estimated"},
+    {"mode":"walk","from_id":"office","to_id":"A","duration_s":3600,"distance_m":5000,"geometry":[{"lat":55.700,"lon":37.600},{"lat":55.731,"lon":37.700}],"quality":"estimated"}
+  ],
+  "patterns": [
+    {
+      "id":"metro-outbound", "line":"M1", "mode":"metro", "headway_s":240,
+      "stops":["metro-a","metro-middle","metro-b"],
+      "hops":[
+        {"mode":"metro","line":"M1","from_id":"metro-a","to_id":"metro-middle","duration_s":300,"distance_m":3000,"geometry":[{"lat":55.702,"lon":37.600},{"lat":55.702,"lon":37.640}],"quality":"estimated"},
+        {"mode":"metro","line":"M1","from_id":"metro-middle","to_id":"metro-b","duration_s":240,"distance_m":2400,"geometry":[{"lat":55.702,"lon":37.640},{"lat":55.702,"lon":37.680}],"quality":"estimated"}
+      ]
+    },
+    {
+      "id":"bus-outbound", "line":"B7", "mode":"bus", "headway_s":600,
+      "stops":["bus-b","bus-c"],
+      "hops":[
+        {"mode":"bus","line":"B7","from_id":"bus-b","to_id":"bus-c","duration_s":420,"distance_m":3500,"geometry":[{"lat":55.704,"lon":37.680},{"lat":55.730,"lon":37.700}],"quality":"estimated"}
+      ]
+    }
+  ]
+}

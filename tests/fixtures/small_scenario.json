@@ -1,0 +1,213 @@
+{
+  "id": "test",
+  "date": "2026-08-17",
+  "office_address": "Синтетический офис",
+  "requests": [
+    {
+      "id": "A",
+      "zone": "test",
+      "source_order": 0,
+      "source_line": 2,
+      "location_id": "A",
+      "address": "Синтетический адрес A",
+      "kind": "Тестовая работа",
+      "subtype": "",
+      "window_start_s": 36000,
+      "window_end_s": 36000,
+      "service_s": 4200,
+      "skill": "installation"
+    },
+    {
+      "id": "B",
+      "zone": "test",
+      "source_order": 1,
+      "source_line": 3,
+      "location_id": "B",
+      "address": "Синтетический адрес B",
+      "kind": "Тестовая работа",
+      "subtype": "",
+      "window_start_s": 32400,
+      "window_end_s": 36000,
+      "service_s": 1200,
+      "skill": "installation"
+    },
+    {
+      "id": "C",
+      "zone": "test",
+      "source_order": 2,
+      "source_line": 4,
+      "location_id": "A",
+      "address": "Синтетический адрес A",
+      "kind": "Тестовая работа",
+      "subtype": "",
+      "window_start_s": 40200,
+      "window_end_s": 40200,
+      "service_s": 1200,
+      "skill": "installation"
+    },
+    {
+      "id": "D",
+      "zone": "test",
+      "source_order": 3,
+      "source_line": 5,
+      "location_id": "D",
+      "address": "Синтетический адрес D",
+      "kind": "Тестовая работа",
+      "subtype": "",
+      "window_start_s": 32400,
+      "window_end_s": 61200,
+      "service_s": 600,
+      "skill": "emergency"
+    }
+  ],
+  "engineers": [
+    {
+      "id": "E1",
+      "zone": "test",
+      "skills": [
+        "installation"
+      ],
+      "profile": "car",
+      "start_location_id": "office",
+      "shift_start_s": 32400,
+      "shift_end_s": 61200
+    },
+    {
+      "id": "E2",
+      "zone": "test",
+      "skills": [
+        "installation"
+      ],
+      "profile": "bicycle",
+      "start_location_id": "office",
+      "shift_start_s": 32400,
+      "shift_end_s": 61200
+    }
+  ],
+  "matrices": {
+    "car": {
+      "locations": [
+        "office",
+        "A",
+        "B",
+        "D"
+      ],
+      "duration_s": [
+        [
+          0,
+          600,
+          1200,
+          300
+        ],
+        [
+          900,
+          0,
+          300,
+          300
+        ],
+        [
+          1800,
+          600,
+          0,
+          300
+        ],
+        [
+          600,
+          300,
+          300,
+          0
+        ]
+      ],
+      "distance_m": [
+        [
+          0,
+          1000,
+          2000,
+          500
+        ],
+        [
+          1500,
+          0,
+          500,
+          500
+        ],
+        [
+          3000,
+          1000,
+          0,
+          500
+        ],
+        [
+          1000,
+          500,
+          500,
+          0
+        ]
+      ]
+    },
+    "bicycle": {
+      "locations": [
+        "office",
+        "A",
+        "B",
+        "D"
+      ],
+      "duration_s": [
+        [
+          0,
+          600,
+          1200,
+          300
+        ],
+        [
+          900,
+          0,
+          300,
+          300
+        ],
+        [
+          1800,
+          600,
+          0,
+          300
+        ],
+        [
+          600,
+          300,
+          300,
+          0
+        ]
+      ],
+      "distance_m": [
+        [
+          0,
+          1000,
+          2000,
+          500
+        ],
+        [
+          1500,
+          0,
+          500,
+          500
+        ],
+        [
+          3000,
+          1000,
+          0,
+          500
+        ],
+        [
+          1000,
+          500,
+          500,
+          0
+        ]
+      ]
+    }
+  },
+  "manifest": {
+    "transport": "handwritten_fixture_v1",
+    "note": "Ручной эталон: A и C у E1, B у E2, D без аварийного специалиста."
+  }
+}

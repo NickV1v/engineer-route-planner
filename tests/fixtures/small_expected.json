@@ -1,0 +1,56 @@
+{
+  "metrics": {
+    "total": 4,
+    "assigned": 3,
+    "unassigned": 1,
+    "active_engineers": 2,
+    "distance_m": 3000,
+    "travel_s": 1800,
+    "waiting_s": 3000,
+    "service_s": 6600
+  },
+  "routes": [
+    {
+      "engineer_id": "E1",
+      "visits": [
+        {
+          "request_id": "A",
+          "arrival_s": 33000,
+          "start_s": 36000,
+          "finish_s": 40200,
+          "travel_s": 600,
+          "waiting_s": 3000,
+          "distance_m": 1000
+        },
+        {
+          "request_id": "C",
+          "arrival_s": 40200,
+          "start_s": 40200,
+          "finish_s": 41400,
+          "travel_s": 0,
+          "waiting_s": 0,
+          "distance_m": 0
+        }
+      ],
+      "distance_m": 1000
+    },
+    {
+      "engineer_id": "E2",
+      "visits": [
+        {
+          "request_id": "B",
+          "arrival_s": 33600,
+          "start_s": 33600,
+          "finish_s": 34800,
+          "travel_s": 1200,
+          "waiting_s": 0,
+          "distance_m": 2000
+        }
+      ],
+      "distance_m": 2000
+    }
+  ],
+  "unassigned_ids": [
+    "D"
+  ]
+}

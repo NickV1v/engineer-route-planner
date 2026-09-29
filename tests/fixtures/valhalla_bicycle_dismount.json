@@ -1,0 +1,185 @@
+{
+  "trip": {
+    "status": 0,
+    "units": "kilometers",
+    "legs": [
+      {
+        "maneuvers": [
+          {
+            "begin_shape_index": 0,
+            "end_shape_index": 1,
+            "time": 7.006,
+            "length": 0.009,
+            "travel_mode": "pedestrian"
+          },
+          {
+            "begin_shape_index": 1,
+            "end_shape_index": 2,
+            "time": 2.88,
+            "length": 0.004,
+            "travel_mode": "pedestrian"
+          },
+          {
+            "begin_shape_index": 2,
+            "end_shape_index": 5,
+            "time": 21.549,
+            "length": 0.101,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 5,
+            "end_shape_index": 31,
+            "time": 113.65,
+            "length": 0.507,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 31,
+            "end_shape_index": 42,
+            "time": 36.8,
+            "length": 0.164,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 42,
+            "end_shape_index": 53,
+            "time": 48.35,
+            "length": 0.241,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 53,
+            "end_shape_index": 72,
+            "time": 283.9,
+            "length": 1.413,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 72,
+            "end_shape_index": 74,
+            "time": 20.619,
+            "length": 0.021,
+            "travel_mode": "pedestrian"
+          },
+          {
+            "begin_shape_index": 74,
+            "end_shape_index": 76,
+            "time": 10.079,
+            "length": 0.014,
+            "travel_mode": "pedestrian"
+          },
+          {
+            "begin_shape_index": 76,
+            "end_shape_index": 101,
+            "time": 166.8,
+            "length": 0.825,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 101,
+            "end_shape_index": 102,
+            "time": 12.471,
+            "length": 0.045,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 102,
+            "end_shape_index": 103,
+            "time": 25.2,
+            "length": 0.007,
+            "travel_mode": "pedestrian"
+          },
+          {
+            "begin_shape_index": 103,
+            "end_shape_index": 105,
+            "time": 2.057,
+            "length": 0.008,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 105,
+            "end_shape_index": 115,
+            "time": 49.885,
+            "length": 0.194,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 115,
+            "end_shape_index": 116,
+            "time": 5.0,
+            "length": 0.005,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 116,
+            "end_shape_index": 117,
+            "time": 1.4,
+            "length": 0.007,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 117,
+            "end_shape_index": 122,
+            "time": 10.599,
+            "length": 0.043,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 122,
+            "end_shape_index": 124,
+            "time": 8.399,
+            "length": 0.027,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 124,
+            "end_shape_index": 156,
+            "time": 255.55,
+            "length": 1.217,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 156,
+            "end_shape_index": 196,
+            "time": 177.999,
+            "length": 0.877,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 196,
+            "end_shape_index": 201,
+            "time": 28.6,
+            "length": 0.123,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 201,
+            "end_shape_index": 204,
+            "time": 8.799,
+            "length": 0.024,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 204,
+            "end_shape_index": 206,
+            "time": 20.468,
+            "length": 0.097,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 206,
+            "end_shape_index": 206,
+            "time": 0.0,
+            "length": 0.0,
+            "travel_mode": "bicycle"
+          }
+        ],
+        "summary": {
+          "time": 1318.069,
+          "length": 5.975
+        },
+        "shape": "msogiByoj~fAgCbEd@~A}GvKs^|k@sCrCv@lEbBtJtN`y@lEzVdAbG`AjFlJ|h@hAhGlBfLvDrUdCdObAhGl@pDhDbSdHbc@b@nCbD`S`F|Zv@zEtAnIpD`U|Gna@lCnPb@zCnBzKbAjFfDkC~BcB|DqBrCcAtCo@pFs@tAKzF]rO_AvCKnYkAfT|B|Qj@xM\\vt@_BlCZdBp@vAxAlAjCv@hEL~DAjGwN~m@uPfs@sVzdAiFrTkVlcA{d@|mB}Lzg@_HjYyUdbAwYvoAyNzn@cLpf@mNpm@mHt[_F`Tgk@tdCeo@|lCcR`x@qb@njBzDjElCxCxA{Fp@gCvClEhNtTxB`JvD~S~C~ShD|P~d@hwArq@n{BtPlk@pEdRxDnSbFrRnFzO~GtMhC`EfEzEzItItKtGrG|B|FnA~Fd@~FRlg@oCpX{AjJgC^bl@BhF@jB@dC`g@OtOe@xJe@rE_@nGuArHuBxAx@fF`Bz@tA\\bCzAw@zBiAeBfD_AzB_AtBeBtFgCfLjFrQd@bBrOMvjA}@d^YzEdDjD~IbEfo@bDht@LrCHxFv@dl@BjFZ|m@?x@Xjm@bAv~B\\bx@DnJr@b~A?lACriAApDApLYxyAn@tz@BjFhAzr@vBvS~A|Kp@rDn@pDrGyEtRwLvGqAfCBjCh@vEfBbBbCdOjT|BdDzJvNlBpCjDbFfBdCpW``@`A~AnD|FtDzGnCpElDbGfD~EdOxSfQbVzVv]~ArB`BhDdBzE~@fF`@zEP`GGbGe@`a@CfE]jWQrLOnMOhOM~LyA~zAa@fc@uArpAc@ra@}@xx@~B\\jNn@pFV`T`A|S`ABmGg@yBiByGzHkp@iXiB"
+      }
+    ]
+  }
+}

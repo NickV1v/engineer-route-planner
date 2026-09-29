@@ -1,0 +1,3 @@
+-r requirements.lock
+networkx==3.5
+pyvalhalla==3.9.0

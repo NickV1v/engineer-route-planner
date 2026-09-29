@@ -1,0 +1,297 @@
+{
+  "recorded_on": "2026-09-20",
+  "purpose": "Reduced official playground responses for offline validation; not accepted coordinates.",
+  "sources": [
+    "https://apidocs.geoapify.com/playground/geocoding/",
+    "https://dadata.ru/suggestions/usage/address/"
+  ],
+  "cases": {
+    "wrong_corpus": {
+      "provider": "geoapify",
+      "address": "г. Москва, ул Юных Ленинцев, д 83с 4",
+      "result": {
+        "datasource": {
+          "sourcename": "openstreetmap",
+          "attribution": "© OpenStreetMap contributors",
+          "license": "Open Database License",
+          "url": "https://www.openstreetmap.org/copyright"
+        },
+        "country_code": "ru",
+        "state": "Moscow",
+        "city": "Moscow",
+        "suburb": "Kuzminki District",
+        "street": "улица Юных Ленинцев",
+        "housenumber": "83 к4",
+        "lat": 55.7022013,
+        "lon": 37.7739593,
+        "result_type": "building",
+        "formatted": "улица Юных Ленинцев 83 к4, Kuzminki District, Moscow, MS, Russia, 109443",
+        "rank": {
+          "importance": 8.908293278396304e-05,
+          "popularity": 7.370985147430458,
+          "confidence": 1,
+          "confidence_city_level": 1,
+          "confidence_street_level": 1,
+          "confidence_building_level": 1,
+          "match_type": "full_match"
+        },
+        "bbox": {
+          "lon1": 37.7734839,
+          "lat1": 55.7020845,
+          "lon2": 37.7742162,
+          "lat2": 55.7023655
+        }
+      }
+    },
+    "invented_house": {
+      "provider": "geoapify",
+      "address": "Домодедово, ул.Гагарина, д. 55/2",
+      "result": {
+        "datasource": {
+          "sourcename": "openstreetmap",
+          "attribution": "© OpenStreetMap contributors",
+          "license": "Open Database License",
+          "url": "https://www.openstreetmap.org/copyright"
+        },
+        "country_code": "ru",
+        "state": "Moscow Oblast",
+        "city": "Domodedovo",
+        "suburb": "микрорайон Северный",
+        "street": "улица Гагарина",
+        "housenumber": "55",
+        "lat": 55.4501228,
+        "lon": 37.7402389,
+        "result_type": "building",
+        "formatted": "улица Гагарина 55, микрорайон Северный, Domodedovo, Moscow Oblast, Russia, 142000",
+        "rank": {
+          "importance": 0.05339368963149459,
+          "popularity": 6.8566129469817865,
+          "confidence": 0,
+          "confidence_city_level": 0,
+          "confidence_street_level": 0,
+          "confidence_building_level": 0,
+          "match_type": "full_match"
+        },
+        "bbox": {
+          "lon1": 37.7366424,
+          "lat1": 55.4496381,
+          "lon2": 37.7611281,
+          "lat2": 55.451865
+        }
+      }
+    },
+    "outside_bbox": {
+      "provider": "geoapify",
+      "address": "Москва Бирюлевская ул. д. 44",
+      "result": {
+        "datasource": {
+          "sourcename": "openstreetmap",
+          "attribution": "© OpenStreetMap contributors",
+          "license": "Open Database License",
+          "url": "https://www.openstreetmap.org/copyright"
+        },
+        "country_code": "ru",
+        "state": "Moscow",
+        "city": "Moscow",
+        "suburb": "Biryulyovo Vostochnoye District",
+        "street": "Бирюлёвская улица",
+        "housenumber": "44",
+        "lat": 55.5862327,
+        "lon": 37.6662884,
+        "result_type": "building",
+        "formatted": "Бирюлёвская улица 44, Biryulyovo Vostochnoye District, Moscow, Russia, 115372",
+        "rank": {
+          "popularity": 7.045326102262543,
+          "confidence": 0.7124999999999999,
+          "confidence_city_level": 1,
+          "confidence_street_level": 0.95,
+          "confidence_building_level": 0.7124999999999999,
+          "match_type": "full_match"
+        },
+        "bbox": {
+          "lon1": 37.6641082,
+          "lat1": 55.5904737,
+          "lon2": 37.6641953,
+          "lat2": 55.5909216
+        }
+      }
+    },
+    "old_source": {
+      "provider": "geoapify",
+      "address": "Город Москва, ул.Дубининская, д. 59 к 2",
+      "result": {
+        "datasource": {
+          "sourcename": "openaddresses",
+          "attribution": "© OpenAddresses contributors",
+          "license": "BSD-3-Clause License"
+        },
+        "country_code": "ru",
+        "state": "Moscow City",
+        "city": "Moscow",
+        "suburb": "Taganka",
+        "street": "Дубининская Улица",
+        "housenumber": "дом 59, корпус 2",
+        "lat": 55.719573,
+        "lon": 37.637709,
+        "result_type": "building",
+        "formatted": "Дубининская Улица дом 59, корпус 2, Taganka, Moscow, MS, Russia",
+        "rank": {
+          "popularity": 7.524014874549604,
+          "confidence": 0.5,
+          "confidence_city_level": 1,
+          "confidence_street_level": 1,
+          "match_type": "full_match"
+        }
+      }
+    },
+    "valid_building": {
+      "provider": "geoapify",
+      "address": "Город Москва, ул.Бирюлёвская, д. 58 к 3",
+      "result": {
+        "datasource": {
+          "sourcename": "openstreetmap",
+          "attribution": "© OpenStreetMap contributors",
+          "license": "Open Database License",
+          "url": "https://www.openstreetmap.org/copyright"
+        },
+        "country_code": "ru",
+        "state": "Moscow",
+        "city": "Moscow",
+        "suburb": "Biryulyovo Vostochnoye District",
+        "street": "Бирюлёвская улица",
+        "housenumber": "58 к3",
+        "lat": 55.5806701,
+        "lon": 37.6681476,
+        "result_type": "building",
+        "formatted": "Бирюлёвская улица 58 к3, Biryulyovo Vostochnoye District, Moscow, Russia, 115372",
+        "rank": {
+          "importance": 8.908293278396304e-05,
+          "popularity": 7.137329839419349,
+          "confidence": 1,
+          "confidence_city_level": 1,
+          "confidence_street_level": 1,
+          "confidence_building_level": 1,
+          "match_type": "full_match"
+        },
+        "bbox": {
+          "lon1": 37.6676252,
+          "lat1": 55.5799624,
+          "lon2": 37.6687045,
+          "lat2": 55.5813395
+        }
+      }
+    },
+    "unregistered_house": {
+      "provider": "dadata",
+      "address": "Город Москва, ул.Дубининская, д. 59 к 2",
+      "result": {
+        "value": "г Москва, ул Дубининская, д 59 к 2",
+        "data": {
+          "country_iso_code": "RU",
+          "city": "Москва",
+          "region": "Москва",
+          "region_type_full": "город",
+          "settlement_with_type": null,
+          "street_type_full": "улица",
+          "street": "Дубининская",
+          "house": "59",
+          "house_type_full": "дом",
+          "house_fias_id": null,
+          "block_type_full": "корпус",
+          "block": "2",
+          "qc_geo": "0",
+          "fias_level": "7",
+          "fias_actuality_state": "0",
+          "geo_lat": "55.719414",
+          "geo_lon": "37.637657",
+          "flat": null,
+          "room": null
+        }
+      }
+    },
+    "fraction_in_registry": {
+      "provider": "dadata",
+      "address": "Домодедово, ул.Гагарина, д. 55/2",
+      "result": {
+        "value": "Московская обл, г Домодедово, мкр Северный, ул Гагарина, д 55/2",
+        "data": {
+          "country_iso_code": "RU",
+          "city": "Домодедово",
+          "region": "Московская",
+          "region_type_full": "область",
+          "settlement_with_type": "мкр Северный",
+          "street_type_full": "улица",
+          "street": "Гагарина",
+          "house": "55/2",
+          "house_type_full": "дом",
+          "house_fias_id": "ea78cc0d-6d71-4712-b847-9de16b62a23e",
+          "block_type_full": null,
+          "block": null,
+          "qc_geo": "0",
+          "fias_level": "8",
+          "fias_actuality_state": "0",
+          "geo_lat": "55.451483",
+          "geo_lon": "37.739513",
+          "flat": null,
+          "room": null
+        }
+      }
+    },
+    "property_in_registry": {
+      "provider": "dadata",
+      "address": "Город Москва, ул.Красноказарменная, д. 9Б стр. 1",
+      "result": {
+        "value": "г Москва, ул Красноказарменная, влд 9Б стр 1",
+        "data": {
+          "country_iso_code": "RU",
+          "city": "Москва",
+          "region": "Москва",
+          "region_type_full": "город",
+          "settlement_with_type": null,
+          "street_type_full": "улица",
+          "street": "Красноказарменная",
+          "house": "9Б",
+          "house_type_full": "владение",
+          "house_fias_id": "d3f800b3-d5fd-40fb-81fc-87b0265ba356",
+          "block_type_full": "строение",
+          "block": "1",
+          "qc_geo": "0",
+          "fias_level": "8",
+          "fias_actuality_state": "0",
+          "geo_lat": "55.7586146",
+          "geo_lon": "37.6993468",
+          "flat": null,
+          "room": null
+        }
+      }
+    },
+    "utility_building": {
+      "provider": "dadata",
+      "address": "Город Москва, ул.Профсоюзная, д. 8 к 2",
+      "result": {
+        "value": "г Москва, ул Профсоюзная, д 8 к 2 стр 1",
+        "data": {
+          "country_iso_code": "RU",
+          "city": "Москва",
+          "region": "Москва",
+          "region_type_full": "город",
+          "settlement_with_type": null,
+          "street_type_full": "улица",
+          "street": "Профсоюзная",
+          "house": "8",
+          "house_type_full": "дом",
+          "house_fias_id": "26377996-16c2-4cad-a6df-4d8ad05ebffa",
+          "block_type_full": "корпус",
+          "block": "2 стр 1",
+          "qc_geo": "0",
+          "fias_level": "8",
+          "fias_actuality_state": "0",
+          "geo_lat": "55.686572",
+          "geo_lon": "37.5685619",
+          "flat": null,
+          "room": null
+        }
+      }
+    }
+  }
+}

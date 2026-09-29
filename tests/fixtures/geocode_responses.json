@@ -1,0 +1,816 @@
+{
+  "attribution": "© OpenStreetMap contributors, https://www.openstreetmap.org/copyright",
+  "provider": "https://photon.komoot.io",
+  "captured": "2026-09-17",
+  "cases": [
+    {
+      "address": "Город Москва, ул.Новорогожская, д. 8",
+      "query": "Город Москва, улица Новорогожская, 8",
+      "status": "matched",
+      "source": "OpenStreetMap:W42709007",
+      "payload": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6845796,
+                55.740895
+              ]
+            },
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 42709007,
+              "osm_key": "building",
+              "osm_value": "apartments",
+              "housenumber": "8",
+              "street": "Новорогожская улица",
+              "city": "Москва",
+              "countrycode": "RU",
+              "extent": [
+                37.6830863,
+                55.7412637,
+                37.6847335,
+                55.7405384
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.684074,
+                55.7411248
+              ]
+            },
+            "properties": {
+              "osm_type": "N",
+              "osm_id": 14099035653,
+              "osm_key": "shop",
+              "osm_value": "outpost",
+              "housenumber": "8",
+              "name": "Wildberries",
+              "street": "Новорогожская улица",
+              "city": "Москва",
+              "countrycode": "RU"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6844936,
+                55.7410009
+              ]
+            },
+            "properties": {
+              "osm_type": "N",
+              "osm_id": 14099035660,
+              "osm_key": "amenity",
+              "osm_value": "clinic",
+              "housenumber": "8",
+              "name": "Диланян Клиника",
+              "street": "Новорогожская улица",
+              "city": "Москва",
+              "countrycode": "RU"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6841049,
+                55.7403097
+              ]
+            },
+            "properties": {
+              "osm_type": "N",
+              "osm_id": 13320242828,
+              "osm_key": "place",
+              "osm_value": "house",
+              "housenumber": "вл8-12 к9",
+              "street": "Новорогожская улица",
+              "city": "Москва",
+              "countrycode": "RU"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6840517,
+                55.7402406
+              ]
+            },
+            "properties": {
+              "osm_type": "N",
+              "osm_id": 13320242829,
+              "osm_key": "place",
+              "osm_value": "house",
+              "housenumber": "вл8А-12А к10",
+              "street": "Новорогожская улица",
+              "city": "Москва",
+              "countrycode": "RU"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "address": "Город Москва, б-р.Самаркандский Квартал 137а, д. к5",
+      "query": "Город Москва, бульвар Самаркандский Квартал 137а, д. к5",
+      "status": "matched",
+      "source": "OpenStreetMap:W45832186",
+      "payload": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.8193568,
+                55.7000662
+              ]
+            },
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 45832186,
+              "osm_key": "building",
+              "osm_value": "apartments",
+              "housenumber": "к5",
+              "street": "квартал Самаркандский Бульвар 137А",
+              "city": "Москва",
+              "countrycode": "RU",
+              "extent": [
+                37.8183627,
+                55.700574,
+                37.8199505,
+                55.6997397
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.8259633,
+                55.7036153
+              ]
+            },
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 45486456,
+              "osm_key": "building",
+              "osm_value": "apartments",
+              "housenumber": "к5",
+              "street": "квартал Самаркандский Бульвар 134а",
+              "city": "Москва",
+              "countrycode": "RU",
+              "extent": [
+                37.8255087,
+                55.7037935,
+                37.8262419,
+                55.7033788
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.8282142,
+                55.7051592
+              ]
+            },
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 45850365,
+              "osm_key": "building",
+              "osm_value": "yes",
+              "housenumber": "1 к5",
+              "street": "квартал Самаркандский Бульвар 134а",
+              "city": "Москва",
+              "countrycode": "RU",
+              "extent": [
+                37.8280772,
+                55.7052362,
+                37.8283512,
+                55.7050822
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "address": "г.Город Москва, ул.Новорогожская, д. 20",
+      "query": "Москва, улица Новорогожская, 20",
+      "status": "review",
+      "source": null,
+      "payload": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6879408,
+                55.7400694
+              ]
+            },
+            "properties": {
+              "osm_type": "N",
+              "osm_id": 14099035656,
+              "osm_key": "shop",
+              "osm_value": "alcohol",
+              "housenumber": "20",
+              "name": "Бристоль",
+              "street": "Новорогожская улица",
+              "city": "Москва",
+              "countrycode": "RU"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6875493,
+                55.7399672
+              ]
+            },
+            "properties": {
+              "osm_type": "N",
+              "osm_id": 14099035659,
+              "osm_key": "shop",
+              "osm_value": "outpost",
+              "housenumber": "20",
+              "name": "Wildberries",
+              "street": "Новорогожская улица",
+              "city": "Москва",
+              "countrycode": "RU"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6875785,
+                55.7401144
+              ]
+            },
+            "properties": {
+              "osm_type": "N",
+              "osm_id": 14099035669,
+              "osm_key": "shop",
+              "osm_value": "outpost",
+              "housenumber": "20",
+              "name": "Пункт выдачи",
+              "street": "Новорогожская улица",
+              "city": "Москва",
+              "countrycode": "RU"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6880379,
+                55.73903
+              ]
+            },
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 129419625,
+              "osm_key": "building",
+              "osm_value": "kindergarten",
+              "housenumber": "20",
+              "street": "Новорогожская улица",
+              "city": "Москва",
+              "countrycode": "RU",
+              "extent": [
+                37.6872757,
+                55.7392706,
+                37.6884463,
+                55.738774
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.687731,
+                55.7400173
+              ]
+            },
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 33499159,
+              "osm_key": "building",
+              "osm_value": "apartments",
+              "housenumber": "20",
+              "street": "Новорогожская улица",
+              "city": "Москва",
+              "countrycode": "RU",
+              "extent": [
+                37.6874258,
+                55.7401869,
+                37.6880361,
+                55.7398477
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "address": "Домодедово, проезд.Советский 1-й, д. 1А",
+      "query": "Домодедово, проезд.Советский 1-й, 1А",
+      "status": "matched",
+      "source": "OpenStreetMap:W1557627663",
+      "payload": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.7700883,
+                55.4407054
+              ]
+            },
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 1557627663,
+              "osm_key": "building",
+              "osm_value": "apartments",
+              "housenumber": "1А",
+              "street": "1-й Советский проезд",
+              "city": "Домодедово",
+              "countrycode": "RU",
+              "extent": [
+                37.7698663,
+                55.4408867,
+                37.7703118,
+                55.4405211
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "address": "Город Москва, проезд.Загорьевский, д. 9",
+      "query": "Город Москва, проезд.Загорьевский, 9",
+      "status": "review",
+      "source": null,
+      "payload": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6775523,
+                55.5780853
+              ]
+            },
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 32632205,
+              "osm_key": "building",
+              "osm_value": "apartments",
+              "housenumber": "9",
+              "street": "Загорьевский проезд",
+              "city": "Москва",
+              "countrycode": "RU",
+              "extent": [
+                37.6773796,
+                55.5784652,
+                37.677725,
+                55.5777055
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6690941,
+                55.5739305
+              ]
+            },
+            "properties": {
+              "osm_type": "N",
+              "osm_id": 2172983374,
+              "osm_key": "shop",
+              "osm_value": "supermarket",
+              "housenumber": "9",
+              "name": "Магнит",
+              "street": "Загорьевский проезд",
+              "city": "Москва",
+              "countrycode": "RU"
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6689549,
+                55.5739513
+              ]
+            },
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 45739232,
+              "osm_key": "building",
+              "osm_value": "commercial",
+              "housenumber": "9/12 с2",
+              "street": "Загорьевский проезд",
+              "city": "Москва",
+              "countrycode": "RU",
+              "extent": [
+                37.668597,
+                55.5741138,
+                37.6692955,
+                55.5738393
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6768484,
+                55.5771873
+              ]
+            },
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 107423411,
+              "osm_key": "building",
+              "osm_value": "yes",
+              "housenumber": "11А с9",
+              "street": "Загорьевский проезд",
+              "city": "Москва",
+              "countrycode": "RU",
+              "extent": [
+                37.6767245,
+                55.57729,
+                37.6769723,
+                55.5770844
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6680939,
+                55.5739682
+              ]
+            },
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 32632162,
+              "osm_key": "building",
+              "osm_value": "apartments",
+              "housenumber": "9/12",
+              "street": "Загорьевский проезд",
+              "city": "Москва",
+              "countrycode": "RU",
+              "extent": [
+                37.6673321,
+                55.5740911,
+                37.6686125,
+                55.5738104
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "address": "Город Москва, ул.Луганская, д. 1",
+      "query": "{\"city\": \"Москва\", \"street\": \"Луганская улица\", \"housenumber\": \"1\", \"countrycode\": \"RU\", \"limit\": 10, \"bbox\": \"35,53,41,57.5\"}",
+      "captured": "2026-09-20",
+      "status": "matched",
+      "source": "OpenStreetMap:W96324767",
+      "payload": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 96324767,
+              "osm_key": "building",
+              "osm_value": "apartments",
+              "type": "house",
+              "housenumber": "1",
+              "street": "Луганская улица",
+              "district": "Царицыно",
+              "city": "Москва",
+              "state": "Москва",
+              "country": "Россия",
+              "postcode": "115516",
+              "countrycode": "RU",
+              "extent": [
+                37.6635831,
+                55.6290863,
+                37.6644961,
+                55.6283129
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6637203,
+                55.6287028
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 96324769,
+              "osm_key": "building",
+              "osm_value": "service",
+              "type": "house",
+              "housenumber": "1 с2",
+              "street": "Луганская улица",
+              "district": "Царицыно",
+              "city": "Москва",
+              "state": "Москва",
+              "country": "Россия",
+              "postcode": "115516",
+              "countrycode": "RU",
+              "extent": [
+                37.6643502,
+                55.6285405,
+                37.6645058,
+                55.6284592
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.664428,
+                55.6284999
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 39532109,
+              "osm_key": "building",
+              "osm_value": "apartments",
+              "type": "house",
+              "housenumber": "4 к1",
+              "street": "Луганская улица",
+              "district": "Царицыно",
+              "city": "Москва",
+              "state": "Москва",
+              "country": "Россия",
+              "postcode": "115516",
+              "countrycode": "RU",
+              "extent": [
+                37.6641362,
+                55.6257373,
+                37.6654738,
+                55.6242071
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.665112,
+                55.6248172
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 27644902,
+              "osm_key": "building",
+              "osm_value": "apartments",
+              "type": "house",
+              "housenumber": "7 к1",
+              "street": "Луганская улица",
+              "district": "Царицыно",
+              "city": "Москва",
+              "state": "Москва",
+              "country": "Россия",
+              "postcode": "115304",
+              "countrycode": "RU",
+              "extent": [
+                37.6662664,
+                55.6258411,
+                37.6673892,
+                55.6247217
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6668862,
+                55.625211
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 48136223,
+              "osm_key": "building",
+              "osm_value": "office",
+              "type": "house",
+              "housenumber": "9 с1",
+              "street": "Луганская улица",
+              "district": "Царицыно",
+              "city": "Москва",
+              "state": "Москва",
+              "country": "Россия",
+              "postcode": "115541",
+              "countrycode": "RU",
+              "extent": [
+                37.6677688,
+                55.6241869,
+                37.6694787,
+                55.6225479
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6686628,
+                55.6233256
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "osm_type": "N",
+              "osm_id": 13482454310,
+              "osm_key": "shop",
+              "osm_value": "outpost",
+              "type": "house",
+              "housenumber": "3 к1",
+              "name": "Ozon",
+              "street": "Луганская улица",
+              "district": "Царицыно",
+              "city": "Москва",
+              "state": "Москва",
+              "country": "Россия",
+              "postcode": "115516",
+              "countrycode": "RU"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6645014,
+                55.6277874
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "osm_type": "W",
+              "osm_id": 27644920,
+              "osm_key": "building",
+              "osm_value": "apartments",
+              "type": "house",
+              "housenumber": "3 к1",
+              "street": "Луганская улица",
+              "district": "Царицыно",
+              "city": "Москва",
+              "state": "Москва",
+              "country": "Россия",
+              "postcode": "115516",
+              "countrycode": "RU",
+              "extent": [
+                37.6641044,
+                55.6282637,
+                37.6650407,
+                55.6273712
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.664554,
+                55.6278364
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "osm_type": "N",
+              "osm_id": 9592308440,
+              "osm_key": "shop",
+              "osm_value": "outpost",
+              "type": "house",
+              "housenumber": "4 к1",
+              "name": "Пункт выдачи",
+              "street": "Луганская улица",
+              "district": "Царицыно",
+              "city": "Москва",
+              "state": "Москва",
+              "country": "Россия",
+              "postcode": "115516",
+              "countrycode": "RU"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6652922,
+                55.624318
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "osm_type": "N",
+              "osm_id": 8873184029,
+              "osm_key": "shop",
+              "osm_value": "outpost",
+              "type": "house",
+              "housenumber": "4 к1",
+              "name": "Ozon",
+              "street": "Луганская улица",
+              "district": "Царицыно",
+              "city": "Москва",
+              "state": "Москва",
+              "country": "Россия",
+              "postcode": "115516",
+              "countrycode": "RU"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6653057,
+                55.6243296
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "osm_type": "N",
+              "osm_id": 5418157015,
+              "osm_key": "amenity",
+              "osm_value": "kindergarten",
+              "type": "house",
+              "housenumber": "4 к1",
+              "name": "Самый лучший",
+              "street": "Луганская улица",
+              "district": "Царицыно",
+              "city": "Москва",
+              "state": "Москва",
+              "country": "Россия",
+              "postcode": "115516",
+              "countrycode": "RU"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                37.6646795,
+                55.6254039
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

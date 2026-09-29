@@ -1,0 +1,157 @@
+{
+  "trip": {
+    "status": 0,
+    "units": "kilometers",
+    "legs": [
+      {
+        "maneuvers": [
+          {
+            "begin_shape_index": 0,
+            "end_shape_index": 4,
+            "time": 22.575,
+            "length": 0.11,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 4,
+            "end_shape_index": 30,
+            "time": 113.65,
+            "length": 0.507,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 30,
+            "end_shape_index": 41,
+            "time": 36.8,
+            "length": 0.164,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 41,
+            "end_shape_index": 52,
+            "time": 48.35,
+            "length": 0.241,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 52,
+            "end_shape_index": 60,
+            "time": 103.199,
+            "length": 0.512,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 60,
+            "end_shape_index": 122,
+            "time": 273.25,
+            "length": 1.35,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 122,
+            "end_shape_index": 152,
+            "time": 360.349,
+            "length": 1.756,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 152,
+            "end_shape_index": 153,
+            "time": 15.571,
+            "length": 0.045,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 153,
+            "end_shape_index": 154,
+            "time": 25.2,
+            "length": 0.007,
+            "travel_mode": "pedestrian"
+          },
+          {
+            "begin_shape_index": 154,
+            "end_shape_index": 156,
+            "time": 2.057,
+            "length": 0.008,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 156,
+            "end_shape_index": 166,
+            "time": 49.885,
+            "length": 0.194,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 166,
+            "end_shape_index": 168,
+            "time": 6.4,
+            "length": 0.012,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 168,
+            "end_shape_index": 173,
+            "time": 10.599,
+            "length": 0.043,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 173,
+            "end_shape_index": 175,
+            "time": 8.4,
+            "length": 0.027,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 175,
+            "end_shape_index": 207,
+            "time": 255.549,
+            "length": 1.217,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 207,
+            "end_shape_index": 247,
+            "time": 177.999,
+            "length": 0.877,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 247,
+            "end_shape_index": 252,
+            "time": 28.6,
+            "length": 0.123,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 252,
+            "end_shape_index": 255,
+            "time": 8.799,
+            "length": 0.024,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 255,
+            "end_shape_index": 257,
+            "time": 20.468,
+            "length": 0.097,
+            "travel_mode": "bicycle"
+          },
+          {
+            "begin_shape_index": 257,
+            "end_shape_index": 257,
+            "time": 0.0,
+            "length": 0.0,
+            "travel_mode": "bicycle"
+          }
+        ],
+        "summary": {
+          "time": 1567.707,
+          "length": 7.315
+        },
+        "shape": "erogiB{lj~fAiCdE}GvKs^|k@sCrCv@lEbBtJtN`y@lEzVdAbG`AjFlJ|h@hAhGlBfLvDrUdCdObAhGl@pDhDbSdHbc@b@nCbD`S`F|Zv@zEtAnIpD`U|Gna@lCnPb@zCnBzKbAjFfDkC~BcB|DqBrCcAtCo@pFs@tAKzF]rO_AvCKnYkAfT|B|Qj@xM\\vt@_BlCZdBp@vAxAlAjCv@hEL~DAjGwN~m@uPfs@sVzdAiFrTkVlcA{d@|mB}Lzg@_HjYuEpI{A~@eBp@{@G}Bc@uAaAiAsAiEiH_AqCi@{GJ_JxCyLjCiExJ}GvD_ErFkKrWugAlCmL`Msi@jEkQlBcJlBcIhAaEv@sBbAsAdBcAhB_@~_@y@vTk@~ESz@EhKg@`I_@dBC|AIbLc@~H[jESfXiBjG]pO}@tA?|E[rIg@hPaAnAGhxAoG~Yy@fMo@pNe@pPMhDJxL\\`RjBhZjGxHdDdGfDj@ZlDnBnUhNf^|[tG~FeD~O}N~i@cRbr@m]|oAeeBzrGuA|EsOnk@_D~KeGxTit@jiCyObm@cVh|@ob@n}A}Tzy@aF~QmJp]}ClKmApEuEhQwHxYkn@~|BqBjS{AjZaFjuAkFx`A}Gt[iCxI{F|GyJ|E{N|G^bl@BhF@jB@dC`g@OtOe@xJe@rE_@nGuArHuBxAx@fF`Bz@tA\\bCzAw@zBiAeBfD_AzB_AtBeBtFgCfLjFrQd@bBrOMvjA}@d^YzEdDjD~IbEfo@bDht@LrCHxFv@dl@BjFZ|m@?x@Xjm@bAv~B\\bx@DnJr@b~A?lACriAApDApLYxyAn@tz@BjFhAzr@vBvS~A|Kp@rDn@pDrGyEtRwLvGqAfCBjCh@vEfBbBbCdOjT|BdDzJvNlBpCjDbFfBdCpW``@`A~AnD|FtDzGnCpElDbGfD~EdOxSfQbVzVv]~ArB`BhDdBzE~@fF`@zEP`GGbGe@`a@CfE]jWQrLOnMOhOM~LyA~zAa@fc@uArpAc@ra@}@xx@~B\\jNn@pFV`T`A|S`ABmGg@yBiByGzHkp@iXiB"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "trip": {
+    "status": 0,
+    "units": "kilometers",
+    "legs": [
+      {
+        "summary": {
+          "has_time_restrictions": false,
+          "has_toll": false,
+          "has_highway": false,
+          "has_ferry": false,
+          "min_lat": 55.730209,
+          "min_lon": 37.638719,
+          "max_lat": 55.739065,
+          "max_lon": 37.651686,
+          "time": 215.204,
+          "length": 2.453,
+          "cost": 521.248
+        },
+        "shape": "caohiB}bhxfAaAq]sCmbAuCu~@cE{EqCuBwAgAm@e@}@NcCbCiB`HeAhDsPbN}WhSeIhGqKfIuC`CkA|@_Az@eAhAaAtA_ClEmElIuEsHmJ_RaOu[gGqMw@gBuHwOyE}JyCkGuAuCwO{^iFaMm\\wv@aSmb@wPaX}f@ox@uqDgfG}GoKyQmYeC{D{H_RaCiHw@cEUeDE_EP_EpAgJ|F_]zChBzHfFlFtEfKdKpGdHfGzGd`@va@dN~Nv[`_@~LhNzAbB~OfRdBvD~@tEf@rH|h@ePvXsJhVaKpaB}_AcAgG}j@z]oWlPe[zRcWlJWeCGk@aAwI"
+      }
+    ]
+  }
+}

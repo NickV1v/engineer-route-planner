@@ -1,0 +1,285 @@
+.address-review-dialog {
+  width: min(1040px, calc(100vw - 40px));
+  max-width: none;
+  height: min(790px, calc(100dvh - 48px));
+  max-height: none;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #dce4ef;
+  border-radius: 12px;
+  background: #fff;
+  color: #26364b;
+  box-shadow: 0 24px 90px #17365338;
+  overflow: hidden;
+}
+.address-review-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+.address-review-dialog::backdrop {
+  background: #18334c38;
+}
+.address-review-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e4eaf2;
+}
+.address-review-heading h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.address-review-heading p {
+  margin: 6px 0 0;
+  color: #67768a;
+  font-size: 13px;
+}
+.address-review-close {
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  border: 0;
+  background: transparent;
+  color: #52647b;
+  border-radius: 6px;
+}
+.address-review-body {
+  display: grid;
+  grid-template-columns: 310px minmax(0, 1fr);
+  flex: 1;
+  min-height: 0;
+}
+.address-review-list {
+  margin: 0;
+  padding: 12px;
+  list-style: none;
+  overflow: auto;
+  border-right: 1px solid #e4eaf2;
+  background: #f7f9fc;
+}
+.address-review-list li + li {
+  margin-top: 6px;
+}
+.address-review-list button {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+  padding: 13px;
+  text-align: left;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: transparent;
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+.address-review-list button:hover {
+  background: #edf3fc;
+}
+.address-review-list button[aria-pressed='true'] {
+  border-color: #a4c5f0;
+  background: #edf4ff;
+}
+.address-review-kind {
+  color: #64758a;
+  font-size: 11px;
+}
+.address-review-list strong {
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.address-review-state {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #9b642d;
+  font-size: 12px;
+}
+.address-review-state.ready {
+  color: #237653;
+}
+.address-review-state.excluded {
+  color: #758093;
+}
+.address-review-detail {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  padding: 20px 24px;
+}
+.address-review-editor {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 1;
+}
+.address-review-fields {
+  min-height: 0;
+  overflow: auto;
+  padding: 3px;
+  margin: -3px;
+}
+.address-review-dialog .primary,
+.address-review-dialog .secondary {
+  font-size: 13px;
+  justify-content: center;
+  margin-left: 0;
+}
+.address-review-editor .address-review-save {
+  flex-shrink: 0;
+  width: 100%;
+  margin-top: 14px;
+}
+.address-review-current > span {
+  color: #67768a;
+  font-size: 12px;
+}
+.address-review-current h3 {
+  margin: 6px 0 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.address-review-editor .address-point-map {
+  height: 240px;
+}
+.address-point-picker {
+  cursor: crosshair;
+}
+.address-map-instruction {
+  margin: 12px 0 0;
+  font-size: 12px;
+  color: #64758a;
+}
+.address-review-editor input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #d7e0eb;
+  border-radius: 6px;
+  font: inherit;
+  background: #fff;
+  color: #26364b;
+}
+.address-manual-coordinates {
+  margin: 14px 0;
+  font-size: 12px;
+}
+.address-manual-coordinates summary {
+  cursor: pointer;
+  color: #52647b;
+}
+.address-manual-coordinates .coordinate-inputs {
+  margin-top: 12px;
+  gap: 12px;
+}
+.address-manual-coordinates label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.address-review-exclusions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  border-top: 1px solid #e4eaf2;
+  padding-top: 16px;
+}
+.address-review-exclusions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #9c4f54;
+  border-color: #ecdadd;
+}
+.address-review-ready {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  color: #237653;
+  text-align: center;
+}
+.address-review-ready h3 {
+  margin: 12px 0 0;
+  color: #26364b;
+  font-size: 20px;
+}
+.address-review-ready p {
+  color: #67768a;
+  font-size: 13px;
+}
+.address-review-footer {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-size: 13px;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 24px;
+  border-top: 1px solid #e4eaf2;
+}
+.planning-exclusions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #67768a;
+}
+.planning-exclusions button {
+  border: 0;
+  background: transparent;
+  color: #2876dc;
+  padding: 6px;
+}
+@media (max-width: 680px) {
+  .address-review-dialog {
+    width: calc(100vw - 16px);
+    height: calc(100dvh - 16px);
+  }
+  .address-review-heading,
+  .address-review-detail,
+  .address-review-footer {
+    padding: 14px;
+  }
+  .address-review-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .address-review-list {
+    flex: 0 0 150px;
+    border-right: 0;
+    border-bottom: 1px solid #e4eaf2;
+  }
+  .address-review-detail {
+    flex: 1;
+  }
+  .address-review-footer button {
+    flex: 1;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .address-review-editor .address-search-row {
+    flex-direction: column;
+  }
+  .address-review-editor .address-search-row > button {
+    width: 100%;
+  }
+  .address-review-exclusions {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .address-review-exclusions button {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "roads": "artifacts/routing-data/roads-v1",
+  "bicycle_roads": "artifacts/routing-data/bicycle-v1",
+  "transit": "artifacts/routing-data/connected-v1",
+  "cache": "artifacts/routing-cache.sqlite"
+}

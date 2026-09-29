@@ -1,0 +1,14 @@
+{
+  "seed": 20260917,
+  "engineer_count": 12,
+  "shifts_s": [[32400, 61200], [50400, 79200]],
+  "skills_cycle": [["installation"], ["local"], ["emergency"], ["installation", "local", "emergency"], ["installation", "local"], ["installation", "local", "emergency"]],
+  "profiles_cycle": ["car", "public_transport_approx", "walk", "bicycle"],
+  "synthetic_speed_m_per_s": {"car": 8, "public_transport_approx": 5, "walk": 1.4, "bicycle": 4},
+  "norm_mapping": {
+    "Подключение": {"work": "Подключение клиентов Базовая", "skill": "installation"},
+    "Дозаказ": {"work": "Дозаказ оборудования", "skill": "installation"},
+    "Локальная заявка": {"work": "Локальная заявка/ремонт у клиента", "skill": "local"},
+    "Глобальная проблема": {"work": "Аварий на ТКД", "skill": "emergency"}
+  }
+}

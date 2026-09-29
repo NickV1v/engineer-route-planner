@@ -1,0 +1,16 @@
+{
+  "source": "https://api.openstreetmap.org/api/0.6/way/655680993/full.json",
+  "checked_on": "2026-09-27",
+  "input_address": "г.Москва проезд Симферопольский, д.7",
+  "tags": {
+    "addr:housenumber": "7",
+    "addr:street": "Симферопольский проезд",
+    "building": "yes"
+  },
+  "bounds": {
+    "south": 55.6646166,
+    "north": 55.6648971,
+    "west": 37.6156384,
+    "east": 37.6160387
+  }
+}
